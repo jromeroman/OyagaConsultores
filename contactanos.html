@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+      integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles/css.css" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap"
+      rel="stylesheet"
+    />
+    <title>Oyaga Consultores</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img
+          class="logo-principal"
+          src="./img/logo1.png"
+          alt="Logo-hconsultores"
+        />
+        <h2 class="slogan">
+          La mejor manera de <span>aliviar tu vida financiera</span>
+        </h2>
+      </div>
+      <div class="barra">
+        <nav class="nav-barra">
+          <button class="tnsb-primary">
+            <a class="btns-change" href="#">Nuestros Servicios</a>
+          </button>
+          <button class="tnsb-primary2">
+            <a class="btns-change" href="#">Casos de Exitos</a>
+          </button>
+          <button class="tnsb-primary3">
+            <a class="btns-change" href="#">Nosotros</a>
+          </button>
+        </nav>
+        <div class="principal">
+          <ul class="listas">
+            <a href="./index.html"><li class="u-pricipal">Inicio</li></a>
+            <a href="./contactanos.html"
+              ><li class="u-pricipal">Contatanos</li></a
+            >
+          </ul>
+        </div>
+        <div class="slogan2">
+          <h2 class="nombre">OYAGA CONSULTORES SAS</h2>
+          <h3>Outsourcing</h3>
+          <p>Grupo Alianzas Estratégicas</p>
+        </div>
+      </div>
+    </header>
+    <h2 class="contactanos-texto centrar-texto">
+      Dejanos tus datos para Contactarte
+    </h2>
+    <div class="contactanos">
+      <div class="formulario">
+        <form id="contactoForm" class="formularios" action="">
+          <label for="inputEmail" class="mail">Correo *</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Ingrese Correo electrónico"
+          />
+          <span id="errorEmail" class="error"></span>
+          <label for="inputEmail" class="mail"
+            >Confirmación Correo Electrónico *</label
+          >
+          <input
+            type="email"
+            id="confirmacion"
+            placeholder=" Confirme Correo electrónico"
+          />
+          <span id="errorConfirmacion" class="error"></span>
+          <label for="inputCiudad" class="ciudad">Ciudad *</label>
+          <input type="text" id="ciudad" placeholder="Ingresa la ciudad" />
+          <span id="errorCiudad" class="error"></span>
+          <label for="inputCiudad" class="ciudad">Celular *</label>
+          <input type="tel" id="celular" placeholder="Ingrese  Nro Celular" />
+          <span id="errorCiudad" class="error"></span>
+          <label for="inputText" class="text">Mensaje de solcitud </label>
+          <textarea name="mensaje" id="mensaje" cols="30" rows="5"></textarea>
+          <span id="errorTex" class="error"></span>
+          <h6 class="text-blue-h6">*Campos Obligatorios</h6>
+          <button type="submit">Continuar</button>
+        </form>
+      </div>
+    </div>
+    <footer class="footer-contenedor footer">
+      <div class="footer">
+        <p class="foot">Siguenos en</p>
+        <a href="#"><i class="fab fa-facebook-f"> </i> </a>
+        <a href="https://api.whatsapp.com/send?phone=[+57][3157019101]"
+          ><i class="fab fa-whatsapp"></i
+        ></a>
+      </div>
+      <div class="footer-datos">
+        <p class="datos-footer">
+          Oyaga Consultores Copyright © 2019. Todos los derechos reservados.
+          Empowered by DevopTechnology
+        </p>
+        <p class="datos-footer">
+          Direccion: xxxx-xxx-xxx Contactos Santa marta: 3157019101 Medellín:
+          3145572299 Barranquilla: 3104674346 Correo:
+          oyagaconsultores@oyagaconsultores.com
+        </p>
+      </div>
+      <div class="footer">
+        <p class="foot">&copy Derechos Reservados</p>
+      </div>
+      <!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function () {
+          FB.init({
+            xfbml: true,
+            version: "v8.0",
+          });
+        };
+
+        (function (d, s, id) {
+          var js,
+            fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s);
+          js.id = id;
+          js.src =
+            "https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js";
+          fjs.parentNode.insertBefore(js, fjs);
+        })(document, "script", "facebook-jssdk");
+      </script>
+
+      <!-- Your Chat Plugin code -->
+      <div
+        class="fb-customerchat"
+        attribution="setup_tool"
+        page_id="106368597924588"
+        logged_in_greeting="Bienvenidos queremos Cambiar tu vida Financiera, En que te podemos Apoyar"
+        logged_out_greeting="Bienvenidos queremos Cambiar tu vida Financiera, En que te podemos Apoyar"
+      ></div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-analytics.js"></script>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

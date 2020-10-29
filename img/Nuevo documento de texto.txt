@@ -1,0 +1,23 @@
+<div class="servicios">
+          <h2 class="h2-servicios">Quitamos Reportes Negativos de</h2>
+          <div class="actividades">
+            <div class="actividad">
+              <img class="img-actividad" src="./img/datacredito.jpg" alt="" />
+            </div>
+            <div class="actividad">
+              <img class="img-actividad1" src="./img/cifin.png" alt="" />
+            </div>
+          </div>
+          <a href=""
+            ><button class="informacion">Obtener Información</button></a
+          >
+        </div>
+
+
+<h2 class="h2-servicios">Mejoramiento ante centrales de riesgo</h2>
+          <p>
+            Posteriormente del análisis financiero, verificamos sus reportes
+            negativos para gestionar la eliminación de las mismas de forma legal
+            y hacer valer sus derechos por las irregularidades presentadas por
+            las entidades que reportan de manera negativa indebida.
+          </p>
